@@ -69,6 +69,20 @@ The schema has two tabs in the Studio: **Content** and **SEO**.
 
 ## CORS origins configured
 
-- `http://localhost:4321` (local Astro dev)
-- `https://tryflynt.ai` (production)
-- `https://flynt.sanity.studio` (hosted Studio)
+| Origin | Purpose |
+|---|---|
+| `http://localhost:4321` | Local Astro dev |
+| `https://flynt-website.web.app` | Test environment |
+| `https://tryflynt.ai` | Production |
+| `https://flynt.sanity.studio` | Hosted Studio |
+
+### Adding a new CORS origin
+
+Run from this directory (requires Node >= 20.19):
+
+```bash
+export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh" && nvm use 20
+npx sanity cors add https://your-origin.com --credentials
+```
+
+Or manage origins in the Sanity dashboard: [sanity.io/manage](https://sanity.io/manage) → Flynt Blog → API → CORS Origins.
