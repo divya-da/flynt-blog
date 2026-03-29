@@ -25,15 +25,37 @@ export default {
     },
     {
       name: 'author',
-      title: 'Author',
+      title: 'Author Name',
       type: 'string',
       group: 'content',
+    },
+    {
+      name: 'authorBio',
+      title: 'Author Bio',
+      type: 'text',
+      group: 'content',
+      rows: 2,
+      description: 'Short bio shown on the post. Helps establish expertise (E-E-A-T).',
+    },
+    {
+      name: 'authorUrl',
+      title: 'Author URL',
+      type: 'url',
+      group: 'content',
+      description: 'Link to author LinkedIn or bio page.',
     },
     {
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',
       group: 'content',
+    },
+    {
+      name: 'updatedAt',
+      title: 'Last Updated',
+      type: 'datetime',
+      group: 'content',
+      description: 'Leave blank if the post has not been updated since publishing.',
     },
     {
       name: 'categories',
