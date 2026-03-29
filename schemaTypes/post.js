@@ -127,6 +127,15 @@ export default {
 
     // ── SEO ──────────────────────────────────────────
     {
+      name: 'seoTags',
+      title: 'SEO Tags (Keywords)',
+      type: 'array',
+      group: 'seo',
+      of: [{ type: 'string' }],
+      options: { layout: 'tags' },
+      description: 'High-intent keywords for this post (6–10). Used in meta keywords tag.',
+    },
+    {
       name: 'seoTitle',
       title: 'SEO Title',
       type: 'string',
